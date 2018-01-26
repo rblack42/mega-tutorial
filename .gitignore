@@ -1,0 +1,17 @@
+# Vim
+*~
+*.swp
+
+#Python
+*py[ocd]
+__pycache__
+_venv
+
+# Sphinx
+_build
+
+# misc
+_unpublished
+
+# Mac
+.DS_Store
