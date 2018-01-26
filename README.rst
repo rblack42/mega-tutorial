@@ -31,8 +31,10 @@ new eBook.
 Please go to Miguel's site to get more information on this effort. There is
 nothing in this repo that is not better presented by the original author!
 
-Roie Black
-Professor, Computer Science
-Austin Community College,
-Austin Texas
-http://www.austincc.edu/rblack
+::
+
+    Roie Black
+    Professor, Computer Science
+    Austin Community College,
+    Austin Texas
+    http://www.austincc.edu/rblack
