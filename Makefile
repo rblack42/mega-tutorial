@@ -22,3 +22,23 @@ run:	_venv microblog/microblog.py
 	export SECRET_KEY=test-secret-key && \
 	flask run
 
+.PHONY: db_init
+db_init:	_venv
+	export FLASK_APP=microblog/microblog.py && \
+	flask db init
+
+.PHONY: db_migrate
+db_migrate:	_venv
+	export FLASK_APP=microblog/microblog.py && \
+	flask db migrate
+
+.PHONY: db_upgrade
+db_upgrade:	_venv
+	export FLASK_APP=microblog/microblog.py && \
+	flask db upgrade
+
+.PHONY: shell
+shell:	_venv
+	export FLASK_APP=microblog/microblog.py && \
+	flask shell
+
