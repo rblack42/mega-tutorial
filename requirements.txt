@@ -2,3 +2,4 @@ Flask
 Flask-WTF
 Flask-sqlalchemy
 Flask-Migrate
+Flask-login
