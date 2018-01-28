@@ -21,6 +21,8 @@ run:	_venv microblog/microblog.py
 	export FLASK_APP=microblog/microblog.py && \
 	export SECRET_KEY=test-secret-key && \
 	export FLASK_DEBUG=1 && \
+	export MAIL_SERVER=localhost && \
+	export MAIL_PORT=8025 && \
 	flask run
 
 .PHONY: db_init
@@ -42,4 +44,8 @@ db_upgrade:	_venv
 shell:	_venv
 	export FLASK_APP=microblog/microblog.py && \
 	flask shell
+
+.PHONY:	fakemail
+fakemail:
+	sudo python -m smtpd -n -c DebuggingServer localhost:8025 
 
