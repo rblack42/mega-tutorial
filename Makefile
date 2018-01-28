@@ -20,6 +20,7 @@ reqs:	requirements.txt
 run:	_venv microblog/microblog.py
 	export FLASK_APP=microblog/microblog.py && \
 	export SECRET_KEY=test-secret-key && \
+	export FLASK_DEBUG=1 && \
 	flask run
 
 .PHONY: db_init
